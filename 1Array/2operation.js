@@ -1,34 +1,35 @@
 
-const arr = [2, 4, 5, 30, 1]
+// const arr = [2, 4, 5, 30, 1]
 
 // sum of array element
-// let sum = 0;
-// console.log(arr.length)
+// let sum = 0 ;
 // for (let i = 0; i < arr.length; i++) {
-//     sum = sum + i;
-// }
+//     sum =sum + arr[i];
 
+// }
 // console.log(sum)
 
 // // max number
+
 // let max = arr[0]
-// for (let i = 1; i < arr.length; i++) {
+
+// for (let i = 0; i < arr.length; i++) {
 //     if (arr[i] > max) {
-//         max = arr[i]
+//         max =
+//             arr[i]
 //     }
 // }
 // console.log(max)
 
-
 // // min number
 // let min = arr[0]
-// for (let i = 1; i < arr.length; i++) {
-//     if (arr[i] < min) {
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (min > arr[i]) {
 //         min = arr[i]
 //     }
 // }
 // console.log(min)
-
 
 // // second largest
 // let max = Math.max(arr[1], arr[0])
@@ -89,15 +90,14 @@ const arr = [2, 4, 5, 30, 1]
 
 
 // postive and neagative array arrange
-// const arr = [-1, 2, 5, -10, -25, 63]
-// let i = 0, j = 0;
-// while (i != arr.length) {
-//     if (arr[i] > 0) {
-//         let temp = arr[i];
-//         arr[i] = arr[j];
-//         arr[j] = temp;
-//         j++;
-//     }
-//     i++;
-// }
-// console.log(arr)
+const arr = [-1, 2, 5, -10, -25, 63]
+
+for (let i = 0, j = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp
+        j++;
+    }
+}
+console.log(arr)
